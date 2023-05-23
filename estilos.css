@@ -29,7 +29,7 @@ header {
 }
 
 #direita {
-    background-color: brown;
+    background-color: #f70606;
     position: relative;
     right: 0;
     width: 100%;
@@ -41,3 +41,25 @@ header {
     margin-right: auto;
     margin-top: 13%;
 }
+
+.backdrop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+    transition: opacity 1s linear;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .desaparecido {
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+  
+  .backdrop video {
+    width: 100%;
+  }
