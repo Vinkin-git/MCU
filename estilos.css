@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    width: 100vw;
+    z-index: 1;
+}
+#esquerda {
+    background-image: url(imgs/Strange\ Harbors\ Film\ Review\ Avengers\ Endgame.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100vh;
+    width: 50vw;
+    position: relative;
+    left: 0;
+}
+
+#caixa {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#direita {
+    background-color: brown;
+    position: relative;
+    right: 0;
+    width: 100%;
+}
+
+#marvel{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13%;
+}
