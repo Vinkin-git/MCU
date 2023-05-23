@@ -10,10 +10,10 @@
 <body>
     <header>
         <nav>
-            <a href=""></a>
+            <span></span>
         </nav>
     </header>
-    <main>
+    <main class="desaparecido">
         <div id="caixa">
             <div id="esquerda"></div>
             <div id="direita">
@@ -21,5 +21,22 @@
             </div>
         </div>
     </main>
+
+    <aside class="backdrop">
+        <video src="" autoplay muted></video>
+    </aside>
+
+    <script>
+        // faz o vídeo desaparecer de leve assim que terminar
+        let tempo = 11000;  // 11s, duração do vídeo
+        setTimeout(() => {
+          // faz o vídeo desaparecer colocando a classe .desaparecido
+          document.querySelector('.backdrop').classList.add('desaparecido');
+          // faz o conteúdo principal surgir, retirando a classe .desaparecido
+          document.querySelector('main').classList.remove('desaparecido');
+        }, tempo);
+  
+      </script>
 </body>
+
 </html>
