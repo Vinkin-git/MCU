@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 1s;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 header {
@@ -11,6 +16,7 @@ header {
     width: 100vw;
     z-index: 1;
 }
+
 #esquerda {
     background-image: url(imgs/Strange\ Harbors\ Film\ Review\ Avengers\ Endgame.jpeg);
     background-size: cover;
@@ -35,7 +41,7 @@ header {
     width: 100%;
 }
 
-#marvel{
+#marvel {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -48,34 +54,34 @@ header {
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 2;
     pointer-events: none;
     transition: opacity 1s linear;
     opacity: 1;
     visibility: visible;
-  }
-  
-  .desaparecido {
+}
+
+.desaparecido {
     opacity: 0 !important;
     visibility: hidden !important;
-  }
-  
-  .backdrop video {
-    width: 100%;
-    
-  }
+}
 
-  section img:nth-child(2n){
+.backdrop video {
+    width: 100vw;
+    height: 100vh;
+}
+
+section img:nth-child(2n) {
     width: 22.7%;
-  }
+}
 
-  section img:nth-child(2n+1){
+section img:nth-child(2n+1) {
     width: 24%;
-  }
+}
 
 
-  section img{
-    border : 25px beige solid;
+section img {
+    border: 25px beige solid;
     display: inline-flex;
     border-radius: 10%;
     border-top: 30px beige solid;
@@ -83,19 +89,19 @@ header {
     margin-right: 20%;
     margin-top: 6%;
 
-  }
+}
 
-  section{
+section {
     justify-content: space-between;
-  }
+}
 
-  #new-films{
+#new-films {
     color: white;
     font-size: 5%;
-    
-    
-  }
-  
+
+
+}
+
 
 
 nav {
@@ -113,6 +119,7 @@ a {
     color: black;
     font-family: arial;
 }
+
 #vings {
     height: 9vh;
     width: 10vw;
@@ -121,13 +128,20 @@ a {
     left: 0;
 }
 
-#direita p{
+#direita p {
     font-size: xx-large;
-    font-family: Arial;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-top: 5%;
     padding-left: 3%;
-}
-video{
-    margin-top: 125px;
+    text-align: center;
 }
 
+video {
+    align-items: center;
+    background-color: black;
+
+}
+#filmes{
+    display: flex;
+    justify-content: ;
+}
