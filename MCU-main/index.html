@@ -41,10 +41,11 @@
     <aside class="backdrop">
         <video src="imgs/videos/Marvel-Intro.mp4" autoplay muted></video>
     </aside>
-
+    <button id="skip">skip</button>
+    <button id="#unmute"> som</button>
     <script>
         // faz o vídeo desaparecer de leve assim que terminar
-        let tempo = 30;  // 32s, duração do vídeo
+        let tempo = 32000;  // 32s, duração do vídeo
         setTimeout(() => {
           // faz o vídeo desaparecer colocando a classe .desaparecido
           document.querySelector('.backdrop').classList.add('desaparecido');
@@ -52,6 +53,21 @@
           document.querySelector('main').classList.remove('desaparecido');
           document.querySelector('nav').classList.remove('desaparecido')
         }, tempo);
+
+        document.querySelector('#skip').addEventListener('click', (e) => {
+
+        // faz o vídeo desaparecer colocando a classe .desaparecido
+        document.querySelector('.backdrop').classList.add('desaparecido');
+
+        // faz o conteúdo principal surgir, retirando a classe .desaparecido
+        document.querySelector('main').classList.remove('desaparecido');
+        document.querySelector('nav').classList.remove('desaparecido')
+      });
+
+      document.querySelector('#unmute').addEventListener('click', (e) => {
+        document.querySelector('.backdrop video').muted = false;
+        e.currentTarget.classList.add('desaparecido');
+      });
   
       </script>
 </body>

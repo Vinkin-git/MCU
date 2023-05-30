@@ -54,7 +54,7 @@ header {
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 1;
     pointer-events: none;
     transition: opacity 1s linear;
     opacity: 1;
@@ -73,10 +73,14 @@ header {
 
 section img:nth-child(2n) {
     width: 22.7%;
+    margin-left: 15%;
+    margin-right: 0;
+
 }
 
 section img:nth-child(2n+1) {
     width: 24%;
+    margin-left: 20%;
 }
 
 
@@ -85,10 +89,7 @@ section img {
     display: inline-flex;
     border-radius: 10%;
     border-top: 30px beige solid;
-    margin-left: 6%;
-    margin-right: 20%;
-    margin-top: 6%;
-
+    margin-top: 10%;
 }
 
 section {
@@ -143,5 +144,59 @@ video {
 }
 #filmes{
     display: flex;
-    justify-content: ;
+}
+
+
+
+/* estilizando o botão de tirar o "muted" do vídeo */
+.backdrop.desaparecido + button {
+    display: none;
+  }
+  
+button {
+    position: absolute;
+    border-radius: 10%;
+    border: 2px solid currentColor;
+    background-color: rgba(255, 255, 255, .15);
+    color: black;
+    font-size: 1.4rem;
+    width: 2em;
+    height: 1.5em;
+    line-height: 1em;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+    z-index: 2;
+}
+
+#skip{
+    left: calc(95% - 0.75em);
+    top: calc(96% - 0.75em);
+}
+  
+button:hover {
+    color: white;
+}
+  
+button:active {
+    color: black;
+    transform: translate(1px, 1px);
+}
+  
+button:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: 0 0 0 4px rgb(255, 0, 0);
+}
+  
+button:active:focus {
+    color: rgb(255, 255, 255);
+    border-color: currentColor;
+    box-shadow: none;
+}
+
+#unmute{
+    left: calc(10% - 0.75em);
+    top: calc(6% - 0.75em);
 }
