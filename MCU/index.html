@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="imgs/#The Legends Superhero Avengers Exclusive Wallpaper.jpeg" type="imagex-icon">
+    <title>Avengers</title>
+</head>
+
+<body>
+    <header>
+        <nav class="desaparecido">
+            <span></span>
+            <img id="vings" src="imgs/Avengers Logo Vectors Free Download.jpg" alt="">
+            <a href="herois/capitaoamerica.html">Capitão América</a>
+            <a href="herois/hf.html">Capitã Marvel</a>
+            <a href="herois/gdg.html">Guardiões da galáxia</a>
+            <a href="herois/wanda.html">Wanda</a>
+            <a href="herois/ha.html">Homem aranha</a>
+            <a href="herois/vn.html">Viúva negra</a>
+            <a href="herois/pn.html">Pantera Negra</a>
+            <a href="herois/hulk.html">Hulk</a>
+            <a href="herois/thor.html">Thor</a>
+        </nav>
+    </header>
+    <main class="desaparecido">
+        <div id="caixa">
+            <div id="esquerda"></div>
+            <div id="direita">
+                <img id="marvel" src="imgs/efca7b1896615f01cac44cda432cf98c.jpg" alt="">
+                <p id="new-films">Últimos lançamentos:</p>
+                <section id=" filmes">
+                    <img id="galáxia" src="imgs/107294g.jpg" alt="">
+                    <img id="formiga" src="imgs/homem-formiga.jpg"
+                        alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FWasp-Quantumania-Movie-Poster-Inches%2Fdp%2FB0BS759L3Q&psig=AOvVaw3jqt3ie1CxvAjEa4ZQaRc8&ust=1684973222997000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPDexr7UjP8CFQAAAAAdAAAAABAE"
+                        id="homem-formiga">
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <aside class="backdrop">
+        <video src="imgs/videos/Marvel-Intro.mp4" autoplay muted></video>
+    </aside>
+    <button id="skip">skip</button>
+    <button id="unmute">som</button>
+    <script>
+        // faz o vídeo desaparecer de leve assim que terminar
+        let tempo = 32000;  // 32s, duração do vídeo
+        setTimeout(() => {
+            // faz o vídeo desaparecer colocando a classe .desaparecido
+            document.querySelector('.backdrop').classList.add('desaparecido');
+            // faz o conteúdo principal surgir, retirando a classe .desaparecido
+            document.querySelector('main').classList.remove('desaparecido');
+            document.querySelector('nav').classList.remove('desaparecido');
+            document.querySelector('#unmute').classList.add('desaparecido');
+        }, tempo);
+
+        document.querySelector('#skip').addEventListener('click', (e) => {
+
+            // faz o vídeo desaparecer colocando a classe .desaparecido
+            document.querySelector('.backdrop').classList.add('desaparecido');
+            document.querySelector('#unmute').classList.add('desaparecido');
+
+            // faz o conteúdo principal surgir, retirando a classe .desaparecido
+            document.querySelector('main').classList.remove('desaparecido');
+            document.querySelector('nav').classList.remove('desaparecido')
+        });
+
+        document.querySelector('#unmute').addEventListener('click', (e) => {
+            document.querySelector('.backdrop video').muted = false;
+            e.currentTarget.classList.add('desaparecido');
+        });
+
+        setTimeout(function () {
+            const someDesgraca = document.querySelector('#unmute');
+            someDesgraca.style.display = 'none';
+        }, 32000);
+
+    </script>
+</body>
+
+</html>
