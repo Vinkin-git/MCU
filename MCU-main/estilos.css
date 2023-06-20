@@ -185,9 +185,8 @@ button:hover::before {
 #skip {
     left: 100%;
     top: 100%;
-    transform: translate(-200%, -130px);
+    transform: translate(-120%, -80px);
 }
-
 button:hover {
     color: white;
 }
@@ -210,7 +209,7 @@ button:active:focus {
 }
 
 #unmute {
-    left: 0;
-    top: 100%;
+    left: -6.3%;
+    top: 108%;
     transform: translate(100%, -130px);
 }
