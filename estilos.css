@@ -214,3 +214,12 @@ button:active:focus {
     top: 100%;
     transform: translate(100%, -130px);
 }
+
+@media (max-width: 1030px) {
+    nav {
+        flex-direction: column;
+    }
+    nav *:not(#vings) {
+        display: none;
+    }
+}
