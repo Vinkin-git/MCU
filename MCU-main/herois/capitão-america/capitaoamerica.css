@@ -59,9 +59,15 @@ main{
 
 }
 
-#direita > section:hover {
-    border-color: yellow;
-    
+#direita:hover {
+    background-color: yellow;
+}
+#esq:hover {
+    background-color: yellow;
+}
+
+section > h1 {
+    font-size: 21px;
 }
 
 #lld{
@@ -184,7 +190,7 @@ nav {
     width: 100%;
     padding: 5px;
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 a {
