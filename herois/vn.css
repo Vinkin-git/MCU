@@ -60,10 +60,10 @@ main{
 }
 
 #direita:hover {
-    background-color: yellow;
+    background-color: rgb(196, 196, 40);
 }
 #esq:hover {
-    background-color: yellow;
+    background-color: rgb(196, 196, 40);
 }
 
 section > h1 {
