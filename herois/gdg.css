@@ -51,12 +51,40 @@ main{
     overflow-y: scroll;
 }
 
+#direita > a > img{
+    height: 12px;
+    width: 12px;
+    justify-content: left;
+    display: flex;
+    margin: 3px;
+    position: absolute;
+}
+
+#direita:active{
+    height: 30vh;
+    width: 30vw;
+}
+
 #direita > section{
     height: 20vh;
     margin-top: 6.4%;
     width: 9.6vw;
     margin-left: 14%;
 
+}
+
+#esq > a > img{
+    height: 12px;
+    width: 12px;
+    justify-content: left;
+    display: flex;
+    margin: 3px;
+    position: absolute;
+}
+
+#esq:active{
+    height: 37vh;
+    width: 45vw;
 }
 
 #direita:hover {

@@ -59,6 +59,34 @@ main{
 
 }
 
+#direita > a > img{
+    height: 12px;
+    width: 12px;
+    justify-content: left;
+    display: flex;
+    margin: 3px;
+    position: absolute;
+}
+
+#direita:active{
+    height: 30vh;
+    width: 30vw;
+}
+
+#esq > a > img{
+    height: 12px;
+    width: 12px;
+    justify-content: left;
+    display: flex;
+    margin: 3px;
+    position: absolute;
+}
+
+#esq:active{
+    height: 37vh;
+    width: 45vw;
+}
+
 #direita:hover {
     background-color: rgb(196, 196, 40);
 }
