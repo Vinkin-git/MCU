@@ -1,0 +1,34 @@
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid rgb(27, 255, 27);
+    color: rgb(27, 255, 27);
+}
+
+body{
+    background-image: url("https://addons-media.operacdn.com/media/CACHE/images/themes/95/39995/1.0-rev1/images/4e5e5b9e-64da-41ff-9ae7-1521fe906513/de448535a9a271d3de68ca7809e1f597.jpg");
+}
+
+th {
+    background-color: #000000;
+}
+
+tr:nth-child(even) {
+    background-color: #0f0f0f;
+}
+
+tr:nth-child(odd) {
+    background-color: #000000;
+}
+
+.highlight {
+    background-color: red;
+    color: rgb(17, 238, 28);
+}

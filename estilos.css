@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+#esquerda {
+    background-image: url(imgs/Strange\ Harbors\ Film\ Review\ Avengers\ Endgame.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100vh;
+    width: 50vw;
+    position: relative;
+    left: 0;
+}
+
+#caixa {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#direita {
+    background-color: #f70606;
+    position: relative;
+    right: 0;
+    width: 100%;
+}
+
+#marvel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 11%;
+}
+
+.backdrop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 1s linear;
+    opacity: 1;
+    visibility: visible;
+}
+
+.desaparecido {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.backdrop video {
+    width: 100vw;
+    height: 100vh;
+}
+
+section img:nth-child(2n) {
+    width: 22.7%;
+    margin-left: 15%;
+    margin-right: 0;
+
+}
+
+section img:nth-child(2n+1) {
+    width: 24%;
+}
+
+
+section img {
+    border: 25px beige solid;
+    display: inline-flex;
+    border-radius: 10%;
+    border-top: 30px beige solid;
+    margin-top: 10%;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#new-films {
+    color: white;
+    font-size: 5%;
+}
+
+nav {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 1.3%;
+    color: black;
+    font-family: arial;
+}
+
+#vings {
+    height: 9vh;
+    width: 10vw;
+    float: left;
+    position: relative;
+    left: 0;
+}
+
+#direita p {
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 5%;
+    padding-left: 3%;
+    text-align: center;
+}
+
+video {
+    align-items: center;
+    background-color: black;
+
+}
+
+#filmes {
+    display: flex;
+}
+
+
+
+/* estilizando o botão de tirar o "muted" do vídeo */
+.backdrop.desaparecido+button {
+    display: none;
+}
+
+button {
+    position: absolute;
+    border-radius: 10%;
+    border: 2px solid red;
+    background-color: rgba(255, 255, 255, .15);
+    color: black;
+    font-size: 1.4rem;
+    line-height: 1em;
+    padding: 0.5rem 2rem;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+    z-index: 2;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    background: red;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+button:hover::before {
+    width: 100%;
+}
+
+#skip {
+    left: 100%;
+    top: 100%;
+    transform: translate(-200%, -130px);
+}
+
+button:hover {
+    color: white;
+}
+
+button:active {
+    color: black;
+    transform: translate(1px, 1px);
+}
+
+button:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: 0 0 0 4px rgb(255, 0, 0);
+}
+
+button:active:focus {
+    color: rgb(255, 255, 255);
+    border-color: currentColor;
+    box-shadow: none;
+}
+
+#unmute {
+    left: 0;
+    top: 100%;
+    transform: translate(100%, -130px);
+}
+
+#apar, #desa{
+    position: none;
+    display: none;
+}
+
+@media (max-width: 1030px) {
+    #apar, #desa{
+        display: block;
+        position: absolute;
+        border-radius: 10%;
+        border: 2px solid red;
+        background-color: rgba(255, 255, 255, .15);
+        color: black;
+        font-size: 1.4rem;
+        line-height: 1em;
+        padding: 0.5rem 2rem;
+        box-sizing: border-box;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+        z-index: 2;
+    }
+
+    
+    nav {
+        flex-direction: column;
+        background-color: #fff;
+        color: #fff;
+    }
+
+    .desaparecido {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+    }
+
+    main{
+        overflow-y: visible;
+    }
+
+    div section{
+       flex-direction: column;
+       align-items: center      
+    }
+
+    #direita{
+        padding-top: 10%;
+        align-items: center
+    }
+
+    #direita #filmes img{
+        margin-left: 0;
+        margin-right: 0;
+        height: 25vh;
+        width: 29vw;
+    }
+
+
+
+    nav a:hover{
+
+    }
+
+    nav > img{
+        float: calc(100% /1);
+    }
+
+}
+
+
+
