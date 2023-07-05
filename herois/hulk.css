@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+.desaparecido {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none;
+    overflow-y: hidden;
+    
+}
+html{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+
+}
+main{
+    background-color: transparent;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    color: white;
+    font-family: 'Ysabeau SC', sans-serif !important;
+}
+
+#esq{
+    background-color: #d6d4c3;
+    border-radius: 5%;
+    height: 25vh;
+    width: 35vw;
+    margin-right: 4%;
+    margin-left: 3%;
+    overflow-y: scroll;
+}
+    
+#esq > section{
+    height: 25vh;
+    width: 20vw;
+    margin-left: 11%;
+    font-size: 11px;
+}
+
+#direita{
+    width:18vw;
+    height: 25vh;
+    background-color: #19434a;
+    border-radius: 8% ;
+    font-size: 10px;
+    overflow-y: scroll;
+}
+
+#direita > section{
+    height: 20vh;
+    margin-top: 6.4%;
+    width: 9.6vw;
+    margin-left: 14%;
+
+}
+
+
+#direita > a > img{
+    height: 12px;
+    width: 12px;
+    justify-content: left;
+    display: flex;
+    margin: 3px;
+    position: absolute;
+}
+
+#direita:hover{
+    height: 30vh;
+    width: 30vw;
+    color: #fff;
+}
+
+#direita p:hover, #direita h1:hover{
+    padding-left: 5vw;
+    width: 27vh;
+    color: white;
+} 
+
+#esq > a > img{
+    height: 12px;
+    width: 12px;
+    justify-content: left;
+    display: flex;
+    margin: 3px;
+    position: absolute;
+}
+
+#esq:hover{
+    width: 47vw;
+    align-self: center;
+    justify-content: center;
+    right: 31%;
+    height: 7vh;
+    color: #fff;
+
+}
+
+#esq:hover, #esq  p:hover{
+    align-self: auto;
+    height: 27vh;
+    color: white;
+}
+#esq p:hover{
+    padding-left: 30%;
+}
+
+#direita:hover {
+    background-color: rgb(65, 65, 62);
+}
+#esq:hover {
+    background-color: rgb(65, 65, 62);
+}
+
+
+section > h1 {
+    font-size: 21px;
+}
+
+#lld{
+    width: calc(100% / 2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10%;
+    align-items: center;
+    width: 80%;
+}
+
+.slide{
+    background-color: #b72424;
+    height: 20vh;
+    display: flex;
+    height: 30vh;
+    border-radius: 13%;
+    width: 40vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    transition: all 0.4s;
+}
+
+.slides{
+    overflow: hidden;
+    width: 10vw;
+    height: 25vh;
+    display: flex;
+}
+
+.item img{
+    width: 10vw;
+    height: 25vh;
+}
+
+.slides img{
+    width: 10vw;
+    height: 25vh;
+}
+
+#atual{
+    transition: all 2s;
+}
+
+.btn{
+    position: absolute;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7em;
+    margin-top: -5px;
+}
+
+.btn:hover{
+    transform: scale(1.5);
+}
+
+#volt{
+    left: 40%;
+    top: 50%;
+}
+
+#next{
+    top: 50%;
+    right: 40%;
+}
+
+.balls{
+    position: absolute;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 14%;
+}
+
+.balls div{
+    transition: all 0.5s;
+    border: 0.05ch solid #fff;
+    padding: 4%;
+    border-radius: 50%;
+    margin: 4%;
+    cursor: pointer;
+}
+
+.balls div:hover{
+    background-color: #19434a;
+}
+
+.imgAtual{
+    background-color: #b72424;
+}
+
+main > h1{
+    margin-top: 10%;
+    margin-bottom: 14%;
+    font-size: 10ch;
+    font-family: Arial;
+}
+p {
+    font-size: 4ch;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+nav {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 1.3%;
+    color: black;
+    font-family: arial;
+}
+
+#vings {
+    height: 9vh;
+    width: 10vw;
+    float: left;
+    position: relative;
+    left: 0;
+    transform: translateY(-30%);
+}
+
+#fundo{
+    background-size: cover;
+    background-position: top;
+    background-image: url(filmes/showimage_wintersoldier_new.png);
+}
+
+#filmes{
+    animation: sumindo 1s infinite;
+}
+@keyframes sumindo {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.2;
+    }
+}
+
+#lad{
+    display: flex;
+    width: 98.5vw;
+    align-items: center;
+    justify-content: center;
+    background-color: black; 
+    background-image: url("https://i.pinimg.com/originals/a5/13/79/a513797cc82c47712207d2ad75451467.jpg");
+    background-blend-mode: luminosity;
+
+}
+@media  (max-width: 1030px) {
+    nav {
+        flex-direction: column;
+        height: 9vh;
+        width: 10vw;
+        float: left;
+        position: relative;
+        left: 0;
+        transform: translateY(-30%);
+        position: fixed;
+        background-color: rgb(255, 255, 255);
+        height: 10vh;
+        width: 100vw;
+        z-index: 1;
+    }
+    header{
+        padding: 0;
+    }
+}
+
+h1{
+    text-shadow: black 3px 3px 3px;
+}
+
+#lld div{
+    box-shadow: rgb(124, 124, 124) 6px 6px 6px;
+}
+
+.slides{
+    box-shadow: rgb(124, 124, 124) 6px 6px 6px;
+}
+
+#apar, #desa{
+    position: none;
+    display: none;
+}
+
+@media  (max-width: 1030px) {
+
+    #apar, #desa{
+        display: block;
+        position: absolute;
+        border-radius: 10%;
+        border: 2px solid red;
+        background-color: rgba(255, 255, 255, .15);
+        color: black;
+        font-size: 1.4rem;
+        line-height: 1em;
+        padding: 0.5rem 2rem;
+        box-sizing: border-box;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+        z-index: 2;
+    }
+
+    
+    nav {
+        flex-direction: column;
+        background-color: #fff;
+        color: #fff;
+    }
+
+    .desaparecido {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+    }
+
+    main{
+        overflow-y: visible;
+    }
+
+    div section{
+       flex-direction: column;
+       align-items: center      
+    }
+
+    #direita{
+        padding-top: 10%;
+        align-items: center
+    }
+
+    #direita #filmes img{
+        margin-left: 0;
+        margin-right: 0;
+        height: 25vh;
+        width: 29vw;
+    }
+
+
+
+    nav a:hover{
+
+    }
+
+    nav > img{
+        float: calc(100% /1);
+    }
+
+    #lld {
+        height: calc(100% /2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10%;
+        align-items: center;
+        width: 80%;
+    }
+    
+    #direita{
+        margin-top: 15%;
+    }
+
+
+
+    #volt, #next{
+        top: 37%
+    }
+    .slide{
+        width: 50vw;
+        height: 16vh;
+        overflow-y: hidden;
+    }
+    .slides{
+        height: 13vh;
+    }
+
+    .slides img{
+        height: 13vh;
+    }
+
+    header{
+        padding: 0;
+    }
+}
