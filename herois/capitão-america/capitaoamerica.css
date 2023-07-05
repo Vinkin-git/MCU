@@ -411,4 +411,8 @@ h1{
 .slides{
     box-shadow: rgb(124, 124, 124) 6px 6px 6px;
 }
+.d {
+    color: red;
+    font-weight: bolder;
+}
 
